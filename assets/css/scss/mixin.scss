@@ -1,0 +1,58 @@
+@mixin icon {
+    color: #fff;
+    font-size: 1.5rem!important;
+    font-weight: 400;
+}
+  
+  
+@mixin align-items_center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin align-items_flex-start {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+@mixin align-items_flex-end {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+@mixin pointer-hover {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        /* color: rgba(255, 255, 255, 0.7); */
+    }
+}
+
+@mixin context-menu {
+    &:hover {
+        cursor: context-menu;
+    }
+}
+
+@mixin btn--s {
+    height: 3.7rem;
+    border-radius: 0.2rem;
+    padding: 0 15px;
+    min-width: 6rem;
+    max-width: 19rem;
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
